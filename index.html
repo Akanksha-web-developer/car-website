@@ -286,6 +286,23 @@
             document.getElementById("navLinks").classList.toggle("show");
         }
     </script>
+
+    <!-- Track existing Call button clicks -->
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[href^="tel:"]');
+
+  if (!link) return;
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'call_click', {
+      event_category: 'contact',
+      event_label: 'Call Button'
+    });
+  }
+});
+</script>
+    
 </body>
 
 </html>
