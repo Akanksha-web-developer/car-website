@@ -223,7 +223,10 @@
                         <div class="d1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300"
                             data-aos-once="true">
                             <img src="call.png">&nbsp;&nbsp;&nbsp;
-                            <p>9561455754</p>
+                            <a href="tel:+919561455754" onclick="gtag('event', 'call_click', { event_category: 'contact',
+                               event_label: 'Call Button' });">
+                               <p>9561455754</p>
+                            </a>
                         </div>
 
                         <div class="d1" data-aos="fade-right" data-aos-duration="1600" data-aos-delay="500"
@@ -286,22 +289,6 @@
             document.getElementById("navLinks").classList.toggle("show");
         }
     </script>
-
-    <!-- Track existing Call button clicks -->
-<script>
-document.addEventListener('click', function(event) {
-  const link = event.target.closest('a[href^="tel:"]');
-
-  if (!link) return;
-
-  if (typeof gtag === 'function') {
-    gtag('event', 'call_click', {
-      event_category: 'contact',
-      event_label: 'Call Button'
-    });
-  }
-});
-</script>
     
 </body>
 
