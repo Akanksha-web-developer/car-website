@@ -434,21 +434,6 @@ address {
     border-radius: 8px;
 }
 
-.call-btn {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.call-btn:hover {
-    background-color: #218838;
-}
-
 h2 {
     font-size: 28px;
     font-weight: 600;
