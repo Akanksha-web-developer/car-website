@@ -286,7 +286,8 @@ li {
     width: 360px;
     margin: 15px;
     border-radius: 20px;
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
 }
 
 .c2 {
