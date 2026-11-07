@@ -125,13 +125,15 @@ nav a:hover {
 }
 
 .container img {
+    width: 400px;
     height: 400px;
+    object-fit: contain;
     border-radius: 20px;
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 37px;
+    flex-shrink: 0;
     animation: zoomBg 4s ease;
-    object-fit: contain;
 }
 
 .text {
