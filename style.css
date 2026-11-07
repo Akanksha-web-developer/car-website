@@ -131,6 +131,7 @@ nav a:hover {
     margin-left: 20px;
     margin-right: 37px;
     animation: zoomBg 4s ease;
+    object-fit: contain;
 }
 
 .text {
